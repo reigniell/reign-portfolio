@@ -1,5 +1,19 @@
 /* Professional Portfolio for OJT Application */
 
+// ADD THIS SECTION AT THE TOP - Force favicon update
+const forceFavicon = () => {
+  const link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+  link.type = 'image/x-icon';
+  link.rel = 'shortcut icon';
+  link.href = 'https://reign-portfolio.vercel.app/myicon.ico?v=' + new Date().getTime();
+  document.getElementsByTagName('head')[0].appendChild(link);
+};
+
+// Call it immediately
+if (typeof window !== 'undefined') {
+  forceFavicon();
+}
+
 import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation";
 
@@ -145,16 +159,18 @@ const workExperiences = {
       ]
     },
     {
-      role: "Assistant Baker (Part-time)",
-      company: "Local Bakery",
+      role: "Assistant Pastry Chef (Part-time)",
+      company: "Local Pastry Shop",
       companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "2020 – 2022",
-      desc: "Assisted in bakery operations including preparation, quality control, and customer service during senior high school.",
+      date: "2020 – Present",
+      desc: "Assisting in pastry production including preparation, decoration, quality control, and customer service. Applying precision and attention to detail honed through pastry work to technical problem-solving in computer science.",
       descBullets: [
-        "Teamwork in fast-paced environment",
-        "Following precise procedures and recipes",
-        "Quality control and attention to detail",
-        "Customer service experience"
+        "Precision work with detailed recipes and measurements",
+        "Quality control ensuring consistent output standards",
+        "Creative decoration and presentation skills",
+        "Customer service and order customization",
+        "Long-term commitment showing reliability",
+        "Applying systematic approaches from pastry to programming"
       ]
     }
   ]
