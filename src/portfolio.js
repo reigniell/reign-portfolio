@@ -1,189 +1,191 @@
-/* Change this file to get your personal Portfolio */
-
-// To change portfolio colors globally go to the  _globalColor.scss file
+/* Professional Portfolio for OJT Application */
 
 import emoji from "react-easy-emoji";
-import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
+import splashAnimation from "./assets/lottie/splashAnimation";
 
 // Splash Screen
-
 const splashScreen = {
-  enabled: true, // set false to disable splash screen
+  enabled: true,
   animation: splashAnimation,
-  duration: 2000 // Set animation duration as per your animation
+  duration: 2000
 };
 
 // Summary And Greeting Section
-
 const illustration = {
-  animated: true // Set to false to use static SVG
+  animated: true
 };
 
 const greeting = {
-  username: "Reign Iell",
-  title: "Hi, I'm Reign",
+  username: "Reigniell Ann L. Bayani",
+  title: "Hi, I'm Reigniell",
   subTitle: emoji(
-    "A dedicated Computer Science student majoring in Intelligent Systems 💻. Currently seeking an On-the-Job Training (OJT) opportunity to apply my academic knowledge, learn from industry professionals, and contribute to meaningful projects."
+    "4th Year BS Computer Science student specializing in Intelligent Systems 🎓 | Seeking On-the-Job Training to apply technical knowledge, contribute to office operations, and gain hands-on industry experience."
   ),
-  resumeLink:
-    "", // You can add a link to your resume later if you have one
-  displayGreeting: true // Set false to hide this section, defaults to true
+  resumeLink: "", // You can add Google Drive link later
+  displayGreeting: true
 };
 
 // Social Media Links
-
 const socialMediaLinks = {
   github: "https://github.com/reigniell",
-  linkedin: "www.linkedin.com/in/bayani-reigniell-ann-5a5b59395", // Add your LinkedIn URL here
-  gmail: "reigniellannbayani@gmail.com", // Add your email for OJT contact
-  // Remove or comment out links you don't have yet:
-  // gitlab: "https://gitlab.com/yourprofile",
-  // facebook: "https://www.facebook.com/yourprofile",
-  // medium: "https://medium.com/@yourprofile",
-  // stackoverflow: "https://stackoverflow.com/users/yourprofile",
-  display: true // Set true to display this section, defaults to false
+  linkedin: "", // Add if available
+  gmail: "reigniellannbayani@gmail.com",
+  display: true
 };
 
 // Skills Section
-
 const skillsSection = {
-  title: "Technical Skills & Focus Areas",
-  subTitle: "Building a strong foundation in Computer Science with a focus on Intelligent Systems",
+  title: "Technical & Personal Skills",
+  subTitle: "Combining technical knowledge with strong interpersonal abilities",
   skills: [
-    emoji(
-      "⚡ Developing a strong foundation in core programming concepts with Python, Java, and C++"
-    ),
-    emoji("⚡ Learning data structures, algorithms, and system design principles"),
-    emoji(
-      "⚡ Exploring Intelligent Systems concepts including data preprocessing, basic machine learning workflows, and algorithm design"
-    )
+    emoji("⚡ Programming Foundations: Python, Java, C++, Object-Oriented Programming"),
+    emoji("⚡ Web Development: HTML, CSS, JavaScript, Responsive Design"),
+    emoji("⚡ Intelligent Systems: Exploring AI/ML concepts, algorithm design, and data processing")
   ],
-
-  /* Make Sure to include correct Font Awesome Classname to view your icon
-https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
-    {
-      skillName: "Python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "Java",
-      fontAwesomeClassname: "fab fa-java"
-    },
-    {
-      skillName: "C++",
-      fontAwesomeClassname: "fas fa-code"
-    },
-    {
-      skillName: "HTML5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "CSS3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "Database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "Git",
-      fontAwesomeClassname: "fab fa-git-alt"
-    },
-    {
-      skillName: "GitHub",
-      fontAwesomeClassname: "fab fa-github"
-    },
-    {
-      skillName: "VS Code",
-      fontAwesomeClassname: "fas fa-code"
-    }
+    { skillName: "Python", fontAwesomeClassname: "fab fa-python" },
+    { skillName: "Java", fontAwesomeClassname: "fab fa-java" },
+    { skillName: "C++", fontAwesomeClassname: "fas fa-code" },
+    { skillName: "HTML5", fontAwesomeClassname: "fab fa-html5" },
+    { skillName: "CSS3", fontAwesomeClassname: "fab fa-css3-alt" },
+    { skillName: "JavaScript", fontAwesomeClassname: "fab fa-js" },
+    { skillName: "Database", fontAwesomeClassname: "fas fa-database" },
+    { skillName: "Git/GitHub", fontAwesomeClassname: "fab fa-git-alt" },
+    { skillName: "VS Code", fontAwesomeClassname: "fas fa-code" }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
-// Education Section
-
+// Education Section - Updated with all your academic achievements
 const educationInfo = {
-  display: true, // Set false to hide this section, defaults to true
+  display: true,
   schools: [
     {
-      schoolName: "University of the Philippines Open University",
-      logo: require("./assets/images/harvardLogo.png"), // You can change this logo later
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "Expected Graduation: 2026",
-      desc: "Specializing in Intelligent Systems. Coursework includes Data Structures & Algorithms, Object-Oriented Programming, Web Development, and Introduction to Artificial Intelligence.",
+      schoolName: "Laguna State Polytechnic University - Sta Cruz Campus",
+      logo: require("./assets/images/harvardLogo.png"),
+      subHeader: "BS Computer Science, Major in Intelligent System",
+      duration: "2022 – Present",
+      desc: "4th Year student developing expertise in intelligent systems, algorithms, and software development. Consistently maintaining academic excellence.",
       descBullets: [
-        "Major: Intelligent Systems",
-        "Relevant Courses: Programming, Discrete Mathematics, Data Management",
-        "Currently expanding knowledge in system design and algorithm optimization"
+        "With Honors - Consistent academic achiever",
+        "Specialization: Intelligent Systems",
+        "Core Courses: Data Structures, Algorithms, OOP, Web Technologies, Database Management",
+        "Expected to contribute to technical and academic activities"
+      ]
+    },
+    {
+      schoolName: "Laguna State Polytechnic University - Sta Cruz Campus",
+      logo: require("./assets/images/stanfordLogo.png"),
+      subHeader: "Senior High School - Information and Communication Technology",
+      duration: "2020 – 2022",
+      desc: "ICT Strand graduate with honors, building foundational technical skills in information technology and communication systems.",
+      descBullets: [
+        "With Honors - Academic Excellence",
+        "Strand: Information and Communication Technology (ICT)",
+        "Developed basic programming and technical troubleshooting skills",
+        "Prepared for university-level Computer Science studies"
+      ]
+    },
+    {
+      schoolName: "Liceo De Pila",
+      logo: require("./assets/images/stanfordLogo.png"),
+      subHeader: "Junior High School",
+      duration: "2016 – 2020",
+      desc: "Developed strong academic discipline and personal conduct recognized by school administration.",
+      descBullets: [
+        "Award: Best in Conduct",
+        "Built foundation in mathematics and sciences",
+        "Developed teamwork and leadership skills",
+        "Consistently demonstrated strong work ethic"
       ]
     }
   ]
 };
 
-// Your top 3 proficient stacks/tech experience
-
+// Tech Stack Proficiency
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
+  viewSkillBars: true,
+  experience: [
+    { Stack: "Programming Fundamentals", progressPercentage: "85%" },
+    { Stack: "Web Development", progressPercentage: "75%" },
+    { Stack: "Academic & Research Skills", progressPercentage: "90%" }
+  ],
+  displayCodersrank: false
+};
+
+// Work Experience - Your part-time jobs show work ethic
+const workExperiences = {
+  display: true,
   experience: [
     {
-      Stack: "Programming Fundamentals",
-      progressPercentage: "85%"
+      role: "Crafter (Part-time)",
+      company: "Self-Employed",
+      companylogo: require("./assets/images/facebookLogo.png"),
+      date: "2024 – Present",
+      desc: "Developing creative handmade products while managing business operations, customer relations, and product development independently.",
+      descBullets: [
+        "Creative problem-solving and design thinking",
+        "Time management between studies and work",
+        "Customer service and relationship management",
+        "Independent project execution"
+      ]
     },
     {
-      Stack: "Web Development Basics",
-      progressPercentage: "75%"
+      role: "Make Up Artist (Part-time)",
+      company: "Freelance",
+      companylogo: require("./assets/images/quoraLogo.png"),
+      date: "2024 – Present",
+      desc: "Providing makeup services for various occasions, demonstrating attention to detail, client communication, and artistic expression.",
+      descBullets: [
+        "Attention to detail and precision work",
+        "Client consultation and service customization",
+        "Time management for appointment scheduling",
+        "Creative expression and trend awareness"
+      ]
     },
     {
-      Stack: "Intelligent Systems Concepts",
-      progressPercentage: "70%"
+      role: "Assistant Baker (Part-time)",
+      company: "Local Bakery",
+      companylogo: require("./assets/images/airbnbLogo.png"),
+      date: "2020 – 2022",
+      desc: "Assisted in bakery operations including preparation, quality control, and customer service during senior high school.",
+      descBullets: [
+        "Teamwork in fast-paced environment",
+        "Following precise procedures and recipes",
+        "Quality control and attention to detail",
+        "Customer service experience"
+      ]
     }
-  ],
-  displayCodersrank: false // Set true to display codersrank badges section
+  ]
 };
 
-// Work experience section
-
-const workExperiences = {
-  display: false, // Set to false since you're a student seeking OJT
-  experience: []
-};
-
-/* Your Open Source Section to View Your Github Pinned Projects
-To know how to get github key look at readme.md */
-
+// Open Source Section
 const openSource = {
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github
-  display: true // Set false to hide this section, defaults to true
+  showGithubProfile: "true",
+  display: true
 };
 
-// Some big projects you have worked on
-
+// Projects Section
 const bigProjects = {
-  title: "Academic & Personal Projects",
-  subtitle: "Projects that demonstrate my learning journey and technical growth",
+  title: "Academic Projects & Seminars",
+  subtitle: "Active participation in technical seminars and academic development",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"), // You can replace this image
-      projectName: "StyleIQ (Concept Project)",
-      projectDesc: "An intelligent fashion recommendation system concept using image-based analysis and dialog-guided inputs. This academic project explores how machine learning can be applied to personalized style suggestions.",
+      image: require("./assets/images/saayaHealthLogo.webp"),
+      projectName: "Technical Seminar Participation",
+      projectDesc: "Active attendee of multiple technical seminars including IoT, Cybersecurity, Engineering Technology, and Vessel Traffic Management Systems, demonstrating commitment to continuous learning.",
       footerLink: [
         {
-          name: "View on GitHub",
-          url: "https://github.com/reigniell/styleiq" // Add your actual project URL
+          name: "View Seminar Certificates",
+          url: "#"
         }
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"), // You can replace this image
-      projectName: "Student Portfolio Website",
-      projectDesc: "This responsive portfolio website built with React.js demonstrates my front-end development skills and commitment to creating professional self-presentation tools.",
+      image: require("./assets/images/nextuLogo.webp"),
+      projectName: "Academic Portfolio Development",
+      projectDesc: "Creating this interactive portfolio website to showcase academic journey, technical skills, and professional readiness for OJT opportunities.",
       footerLink: [
         {
           name: "View Source Code",
@@ -192,96 +194,131 @@ const bigProjects = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
-// Achievement Section
-// Include certificates, talks etc
-
+// Achievement Section - Your seminars and awards
 const achievementSection = {
-  title: emoji("Trainings & Certifications 🏆"),
-  subtitle: "Professional development activities and certifications I've completed",
+  title: emoji("Seminars & Certifications 🏆"),
+  subtitle: "Continuous learning through professional and technical seminars",
 
   achievementsCards: [
     {
-      title: "AI Fundamentals Webinar",
-      subtitle: "UPOU ICTDO - March 2025",
-      image: require("./assets/images/codeInLogo.webp"), // You can replace this
-      imageAlt: "AI Webinar Certificate",
+      title: "Vessel Traffic Management System",
+      subtitle: "Subic Bay Metropolitan Authority - April 2024",
+      image: require("./assets/images/codeInLogo.webp"),
+      imageAlt: "VTMS Seminar",
       footerLink: [
-        {
-          name: "View Certificate",
-          url: "#" // Add your certificate link here
-        }
+        { name: "Certificate", url: "#" }
+      ]
+    },
+    {
+      title: "Engineering & Computer Technology Convention",
+      subtitle: "University of the Philippines Diliman - April 2023",
+      image: require("./assets/images/googleAssistantLogo.webp"),
+      imageAlt: "Engineering Convention",
+      footerLink: [
+        { name: "Certificate", url: "#" }
+      ]
+    },
+    {
+      title: "Internet of Things & Cybersecurity",
+      subtitle: "Laguna State Polytechnic University - 2022",
+      image: require("./assets/images/pwaLogo.webp"),
+      imageAlt: "IoT & Security Seminar",
+      footerLink: [
+        { name: "Certificate", url: "#" }
       ]
     }
-    // You can add more certificates here as you earn them
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
-// Blogs Section
-
-const blogSection = {
-  title: "Blogs",
-  subtitle: "I believe in documenting my learning journey and sharing knowledge",
-  displayMediumBlogs: "false", // Set to false unless you have a Medium blog
-  blogs: [], // Leave empty for now
-  display: false // Set to false since you don't have blogs yet
-};
-
-// Talks Sections
-
+// Talks Section - Your seminar attendance
 const talkSection = {
-  title: "Webinars & Workshops",
-  subtitle: emoji("Learning from industry experts and academic professionals"),
+  title: "Professional Development Seminars",
+  subtitle: emoji("Committed to continuous learning through technical seminars"),
 
   talks: [
     {
-      title: "AI Fundamentals Webinar",
-      subtitle: "UPOU ICTDO - March 2025",
-      slides_url: "#", // Add link if available
-      event_url: "#" // Add link if available
+      title: "Employability Skills Training Program",
+      subtitle: "LSPU - April 2022",
+      slides_url: "#",
+      event_url: "#"
+    },
+    {
+      title: "Stress Management & Career Opportunities",
+      subtitle: "LSPU - June 2022",
+      slides_url: "#",
+      event_url: "#"
+    },
+    {
+      title: "New Normal World for Work",
+      subtitle: "LSPU - May 2022",
+      slides_url: "#",
+      event_url: "#"
     }
-    // Add more workshops/webinars you've attended
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
+};
+
+// Personal Skills Display
+const personalSkills = {
+  display: true,
+  title: "Personal Skills & Attributes",
+  skills: [
+    "Strong Work Ethic (demonstrated through part-time work while studying)",
+    "Time Management (balancing academics with multiple jobs)",
+    "Attention to Detail (crafting, makeup artistry, baking)",
+    "Adaptability (multiple roles and responsibilities)",
+    "Continuous Learning (regular seminar attendance)",
+    "Professional Conduct (Best in Conduct awardee)",
+    "Team Collaboration (assistant baker experience)",
+    "Customer Service (all part-time roles)"
+  ]
+};
+
+// Blog Section (can be hidden for now)
+const blogSection = {
+  display: false
 };
 
 // Podcast Section
-
 const podcastSection = {
-  title: emoji("Podcast 🎙️"),
-  subtitle: "",
-
-  podcast: [],
-  display: false // Set to false unless you have podcasts
+  display: false
 };
 
 // Resume Section
 const resumeSection = {
-  title: "Resume",
-  subtitle: "Available upon request",
-
-  display: true // Set false to hide this section
+  title: "Professional Objective",
+  subtitle: "Seeking Student Assistant/OJT Position",
+  objective: "As a 4th Year BS Computer Science student, I aim to contribute as a Student Assistant in attending to clerical and technical functions, aiding academic activities, and assisting in ensuring smooth office operations. I look forward to hands-on experience that will enhance my capabilities and better equip me for future career opportunities.",
+  contact: {
+    phone1: "0961-351-8289",
+    phone2: "0992-996-8579",
+    address: "163 A. Fernandez St, Brgy San Roque, Victoria Laguna",
+    email: "reigniellannbayani@gmail.com"
+  },
+  display: true
 };
 
+// Contact Info
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
-  subtitle: "Interested in offering an OJT opportunity or discussing technology? I'd love to connect!",
-  number: "", // Add your number if comfortable
-  email_address: "your.email@example.com" // Use the same email as above
+  title: emoji("Contact Information 📞"),
+  subtitle: "Available for OJT opportunities and academic assistance roles",
+  number: "0961-351-8289 | 0992-996-8579",
+  email_address: "reigniellannbayani@gmail.com",
+  address: "163 A. Fernandez St, Brgy San Roque, Victoria Laguna"
 };
 
 // Twitter Section
-
 const twitterDetails = {
-  userName: "twitter", // Replace if you have Twitter
-  display: false // Set to false unless active on Twitter
+  display: false
 };
 
-const isHireable = true; // Set to true since you're seeking OJT
+const isHireable = true;
 
+// Export all sections
 export {
   illustration,
   greeting,
@@ -297,6 +334,7 @@ export {
   blogSection,
   talkSection,
   podcastSection,
+  personalSkills,
   contactInfo,
   twitterDetails,
   isHireable,
